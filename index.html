@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pictionary</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="game-header">
+        <button id="start">Start Game</button>
+        <div id="score">Score: 0</div>
+        <div id="timer">Timer: 30</div>
+    </div>
+    <div id="word"></div>
+
+    <div class="controls">
+        <div class="brush-control">
+            <span>Size:</span>
+            <input type="range" id="brushSize" min="1" max="50" value="35">
+        </div>
+        <div class="color-picker">
+            <!-- Color options -->
+        </div>
+        <button id="clear">Clear</button>
+    </div>
+
+    <canvas id="canvas" width="600" height="350"></canvas>
+    <div id="message">Press Start to begin!</div>
+
+    <!-- <script src="js/wordList.js"></script> 
+    <script src="js/ColorDetector.js"></script>
+    <script src="js/Drawing.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <!-- word list stores words and their corresponding colors–when picking words make sure they have distinct colors
+        color detector will imitate an ai
+        drawing will handle the drawing on the canvas
+        game will handle the game logic rules etc
+        main will handle the main game loop
+    -->
+</body>
